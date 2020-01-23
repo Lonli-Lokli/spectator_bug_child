@@ -1,0 +1,10 @@
+<div>
+  <p>Parent works!</p>
+  <app-child [inputData]="childInputData"></app-child>
+  <div>
+    <p>Parent can use child component values:</p>
+    <p>child component has inputData: {{child.inputData}}</p>
+    <span class='pub'>child component service has value: {{child.dataService.value.count}}</span><br/>
+    <span class='sub'>child component service has subValue: {{child.dataService.subValue.count}}</span>
+  </div>
+</div>
